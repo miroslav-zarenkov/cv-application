@@ -8,6 +8,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
+  const [university, setUniversity] = useState('');
 
   return (
     <div className="app">
@@ -16,12 +17,20 @@ function App() {
         email={email}
         phone={phone}
         address={address}
+        university={university}
         setName={setName}
         setEmail={setEmail}
         setPhone={setPhone}
         setAddress={setAddress}
+        setUniversity={setUniversity}
       />
-      <Resume name={name} email={email} phone={phone} address={address} />
+      <Resume
+        name={name}
+        email={email}
+        phone={phone}
+        address={address}
+        university={university}
+      />
     </div>
   );
 }

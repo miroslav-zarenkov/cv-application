@@ -6,9 +6,10 @@ type ResumeProps = {
   email: string;
   phone: string;
   address: string;
+  university: string;
 };
 
-function Resume({ name, email, phone, address }: ResumeProps) {
+function Resume({ name, email, phone, address, university }: ResumeProps) {
   return (
     <Wrapper className={'resume'}>
       <ResumePersonal
@@ -16,6 +17,7 @@ function Resume({ name, email, phone, address }: ResumeProps) {
         email={email}
         phone={phone}
         address={address}
+        university={university}
       />
     </Wrapper>
   );
