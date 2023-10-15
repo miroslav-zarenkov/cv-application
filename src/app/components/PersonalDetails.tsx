@@ -6,10 +6,10 @@ type EditorProps = {
   email: string;
   phone: string;
   address: string;
-  setName: (value: string) => void;
-  setEmail: (value: string) => void;
-  setPhone: (value: string) => void;
-  setAddress: (value: string) => void;
+  setName: (name: string) => void;
+  setEmail: (email: string) => void;
+  setPhone: (phone: string) => void;
+  setAddress: (address: string) => void;
 };
 
 function PersonalDetails({
