@@ -1,9 +1,22 @@
+import ResumePersonal from './ResumePersonal';
 import Wrapper from './Wrapper';
 
-function Resume() {
+type ResumeProps = {
+  name: string;
+  email: string;
+  phone: string;
+  address: string;
+};
+
+function Resume({ name, email, phone, address }: ResumeProps) {
   return (
     <Wrapper className={'resume'}>
-      <Wrapper className={'personal-info'}>NAME SHOULD SHOW HERE</Wrapper>
+      <ResumePersonal
+        name={name}
+        email={email}
+        phone={phone}
+        address={address}
+      />
     </Wrapper>
   );
 }

@@ -1,18 +1,24 @@
-import { useState } from 'react';
-
 type InputProps = {
   type: string;
   text: string;
   id: string;
   dataKey: string;
   placeholder: string;
+  value: string;
+  onInputChange: (value: string) => void;
 };
 
-function Input({ type, text, id, dataKey, placeholder }: InputProps) {
-  const [value, setValue] = useState('');
-
+function Input({
+  type,
+  text,
+  dataKey,
+  id,
+  placeholder,
+  value,
+  onInputChange,
+}: InputProps) {
   function addText(event: React.ChangeEvent<HTMLInputElement>) {
-    setValue(event.target.value);
+    onInputChange(event.target.value);
   }
 
   return (
