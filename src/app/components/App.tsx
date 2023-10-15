@@ -1,15 +1,12 @@
 import '../../sass/components/_App.scss';
-import Wrapper from './Wrapper';
+import Editor from './Editor';
+import Resume from './Resume';
 
 function App() {
   return (
     <div className="app">
-      <Wrapper className={'edit'}>
-        <Wrapper className={'edit-box'}>Edit</Wrapper>
-      </Wrapper>
-      <Wrapper className={'resume'}>
-        <Wrapper className={'resume-box'}>Resume</Wrapper>
-      </Wrapper>
+      <Editor />
+      <Resume />
     </div>
   );
 }
