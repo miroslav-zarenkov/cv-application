@@ -1,17 +1,12 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/normalize";
-@import "base/reset";
+@use "base/normalize";
+@use "base/reset";
 
 html,
-.body {
+.body,
+.root {
   height: 100%;
 }
 
-.root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+* {
+  border: solid 1px red;
 }

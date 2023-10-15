@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as mixins;
+
+.app {
+  @include mixins.flex;
+  gap: 20px;
+  height: 100%;
+}

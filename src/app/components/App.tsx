@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import '../../sass/components/App.scss';
+import '../../sass/components/_App.scss';
+import Wrapper from './Wrapper';
 
 function App() {
-  const [number, setNumber] = useState(0);
-  function handleClick() {
-    setNumber(number + 1);
-  }
   return (
-    <div className="test">
-      <p>Hello, React!</p>
-      <button onClick={handleClick}>{number}</button>
+    <div className="app">
+      <Wrapper className={'edit'}>
+        <Wrapper className={'edit-box'}>Edit</Wrapper>
+      </Wrapper>
+      <Wrapper className={'resume'}>
+        <Wrapper className={'resume-box'}>Resume</Wrapper>
+      </Wrapper>
     </div>
   );
 }
